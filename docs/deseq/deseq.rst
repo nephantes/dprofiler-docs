@@ -2,7 +2,8 @@
 DE Analysis
 ***************
 
-This guide contains a breif discription of DESeq2 used within the DEBrowser
+This guide contains a brief discription of DE analysis methods used within Dprofiler. These methods
+are primarily incorporated within each iteration of the Differential Heterogeneity Analysis. 
 
 
 Introduction
@@ -12,7 +13,7 @@ Differential gene expression analysis has become an increasingly popular tool in
 
 `DESeq2 userguide <https://bioconductor.org/packages/release/bioc/manuals/DESeq2/man/DESeq2.pdf>`_
 
-With multiple parameters such as padjust values, log fold changes, and plot styles, altering plots, created with your DE data can be a hassle as well as time consuming. The DEBrowser uses DESeq2, EdgeR, and Limma coupled with shiny to produce real-time changes within your plot queries and allows for interactive browsing of your DE results. In addition to DE analysis, DEBrowser also offers a variety of other plots and analysis tools to help visualize your data even further.
+With multiple parameters such as padjust values, log fold changes, and plot styles, altering plots, created with your DE data can be a hassle as well as time consuming. The Dprofiler uses DESeq2, EdgeR, and Limma coupled with shiny to produce real-time changes within your plot queries and allows for interactive browsing of your DE results. In addition to DE analysis, Dprofiler also offers a variety of other plots and analysis tools to help visualize your data even further.
 
 DESeq2
 =========
@@ -111,30 +112,6 @@ For more details on ComBat, please check the user guide.
 
 ComBat is part of the SVA R Bioconductor package which specializes in corecting for known batch effects.
 No additional parameters are selected or altered when running SVA's ComBat.
-
-DEBrowser
-=========
-
-DEBrowser utilizes `Shiny <http://shiny.rstudio.com/>`_, a R based application development tool that creates a wonderful interactive user interface (UI)
-combinded with all of the computing prowess of R.  After the user has selected the data to analyze and has used the shiny
-UI to run DESeq2, the results are then input to DEBrowser.  DEBrowser manipulates your results in a way that allows for
-interactive plotting by which changing padj or fold change limits also changes the displayed graph(s).
-For more details about these plots and tables, please visit our quickstart guide for some helpful tutorials.
-
-For comparisons against other popular data visualization tools, see the table below.
-
-.. image:: ../debrowser_pics/comparison_table.png
-	:align: center
-	
-For more information on the programs compared against DEBrowser, please visit these pages:
-
-	* `MeV <http://www.tm4.org/mev.html>`_
-	
-	* `Chipster <http://chipster.csc.fi>`_
-	
-	* `Galaxy <https://usegalaxy.org/>`_
-	
-	* `CummeRbund <http://compbio.mit.edu/cummeRbund/>`_
 
 References
 ==========
