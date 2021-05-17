@@ -16,6 +16,19 @@ To detect such heterogeneities and outliers within disease cohorts and datasets,
   :align: center
   :width: 60%
 
-This novel application allows immediate integration of Bulk and scRNA data sets to detect heterogeneous samples within submitted disease cohorts and disease studies. Dprofiler evaluates bulk RNA samples, detect anomalies within each sample of a bulk dataset and further explore causes of such heterogeneous patterns via external single cell scRNA data sets and other bulk RNA data sets. 
+This novel application allows easy dissemination of Bulk and scRNA data sets to detect heterogeneous samples within submitted disease cohorts and disease studies. Dprofiler evaluates bulk RNA samples, detect anomalies within each sample of a bulk dataset and further explore causes of such heterogeneous patterns via external single cell scRNA data sets and other bulk RNA data sets. 
 
 Users are allowed to choose from a variety of algorithms for **scoring the heterogeneity** of samples within the user-defined differential expression analysis as well as methods to detect differentially expressed genes. These scores are universally interpretable, and indicate the level of heterogeneity of each sample. By iteratively removing heterogeneous samples and repeating the differentially expressed analysis, both algorithms converge until there are no more highly heterogeneous samples left in the data sets. The final homogeneous set of conditions are used to calculate the final heterogeneity score of samples.
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+
+   quickstart/quickstart
+   local/local
+   diffhetero/diffhetero
+   cellcomp/cellcomp
+   deseq/deseq
+   references/references
+
